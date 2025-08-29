@@ -1,9 +1,12 @@
 #include <stdio.h>
 int main(){
-    float l, w;
-    printf("Enter length and width: ");
-    scanf("%f %f", &l, &w);
-    printf("Area = %.2f\n", l * w);
-    printf("Perimeter = %.2f\n", 2 * (l + w));
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    if(n > 0) printf("%d is Positive\n", n);
+    else if(n < 0) printf("%d is Negative\n", n);
+    else printf("The number is Zero\n");
+
     return 0;
 }
