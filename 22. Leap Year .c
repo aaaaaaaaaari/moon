@@ -1,8 +1,15 @@
 #include <stdio.h>
+
 int main() {
-    char ch;
-    for(ch = 'A'; ch <= 'Z'; ch++) {
-        printf("%c ", ch);
+    int year;
+    printf("Enter a year: ");
+    scanf("%d", &year);
+
+    if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
+        printf("%d is a Leap Year.\n", year);
+    } else {
+        printf("%d is NOT a Leap Year.\n", year);
     }
+
     return 0;
 }
